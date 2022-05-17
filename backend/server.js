@@ -16,6 +16,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/votes', require('./routes/voteRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.use(errorHandler)
 
