@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { FaSignInAlt } from 'react-icons/fa'
 
+import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { login, reset  } from '../features/auth/authSlice'
+
+import Spinner from '../components/Spinner'
+
+
+
 const Login = () => {
    
     const  [formData , setFormData] = useState({
@@ -11,6 +20,23 @@ const Login = () => {
     })
     const { email, password } = formData
 
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const { user, isError, isLoading, isSuccess, message} = useSelector(
+        (state) => state.auth
+    )
+
+    useEffect(() => {
+        if (isError) {
+            toast.error(message)
+        }
+        if (isSuccess || user ) {
+            navigate ('/')
+        }
+
+        dispatch(reset())
+    }, [user, isError, isLoading, isSuccess, message])
+
     const onChange = (e) => {
         setFormData((prevState ) => ({
             ...prevState, [e.target.name]: e.target.value
@@ -19,6 +45,15 @@ const Login = () => {
 
     const onSubmit = (e) => {
         e.preventDefault()
+
+        const userData = {
+            email, password      
+        }
+        dispatch(login(userData))
+    }
+
+    if (isLoading){
+        return <Spinner />
     }
 
   return (
@@ -27,7 +62,7 @@ const Login = () => {
         <h1 className='fa-user-icon'>
             <FaSignInAlt /> Login
         </h1>
-        <p>Please enter your email and password</p>
+        <p>Email and Password Please</p>
 
     </section>
     <section className='form'>
