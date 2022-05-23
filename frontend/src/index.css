@@ -23,6 +23,7 @@ a {
 
 p {
   line-height: 1.7;
+  color: white
 }
 
 ul {
@@ -90,6 +91,7 @@ h3 {
   font-weight: 700;
   margin-bottom: 50px;
   padding: 0 20px;
+  color: white
 }
 
 .heading p {
@@ -115,7 +117,10 @@ h3 {
   right: 15px;
   cursor: pointer;
   border: none;
-  background: none;
+  background:none;
+  color: red;
+  font-size: x-large;
+  
 }
 
 .form,

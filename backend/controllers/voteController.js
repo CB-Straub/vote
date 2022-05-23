@@ -38,15 +38,15 @@ const updateVote = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Vote not found')
     }
-    const user = await User.findById(req.user.id)
+    // const user = await User.findById(req.user.id) variable duplicates a re.user.id below and isnt needed
 
     //check for the authenticated user
-    if (!user) {
+    if (!req.user) {
         res.status(401)
         throw new Error('User not found')
     }
     //verify logged user matches vote user
-    if (vote.user.toString() !== user.id ) {
+    if (vote.user.toString() !== req.user.id ) {
         res.status(401)
         throw new Error('Unauthorized User')
     }
