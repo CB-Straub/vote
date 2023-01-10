@@ -66,7 +66,7 @@ useEffect(() => {
             ))}
           </div>
         ) : (
-          <h3>You have not made any votes</h3>
+          <h3>No stories yet. </h3>
         )}
     </section>
     

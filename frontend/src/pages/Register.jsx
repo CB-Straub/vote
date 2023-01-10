@@ -34,7 +34,8 @@ const Register = () => {
         }
         //if the user is registered it will navigate to the dashboard page for the user
         if(isSuccess || user ) {
-            navigate('/')
+           navigate('/')
+           toast('Thanks for registering!')
         }
 
         dispatch(reset())
@@ -77,7 +78,7 @@ const Register = () => {
         <h1 className='fa-user-icon'>
             <FaUser /> Sign Up
         </h1>
-        <p>Let's get you signed up!</p>
+        <p className='signup'>Let's get you signed up!</p>
 
     </section>
     <section className='form'>
@@ -97,7 +98,7 @@ const Register = () => {
                 className='form-control' 
                 id='email' name ='email' 
                 value={email} 
-                placeholder='Please enter your email'
+                placeholder='Please enter your email'                                                            
                 onChange={onChange}/>
              </div>
              <div className="form-group">
@@ -106,7 +107,7 @@ const Register = () => {
                 className='form-control' 
                 id='password' name ='password' 
                 value={password} 
-                placeholder='Create an unhackable password'
+                placeholder='Create an unhackable password'                                                          
                 onChange={onChange}/>
              </div>
              <div className="form-group">
@@ -115,7 +116,7 @@ const Register = () => {
                 className='form-control' 
                 id='confirmPassword' name ='confirmPassword' 
                 value={confirmPassword} 
-                placeholder='Confirm your password'
+                placeholder='Confirm your password'                                                                 
                 onChange={onChange}/>
              </div>
              <div className='form-group'>

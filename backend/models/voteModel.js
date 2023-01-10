@@ -10,7 +10,19 @@ const voteSchema = mongoose.Schema({
     text: {
         type: String,
         required: [true, 'Add a text value please']    
-    }
+    }, 
+    createdAt:{
+        type: Date,
+        required: true,
+    },
+    // imageUrl: {
+    //     type: String,
+    //     required: true
+    // },
+    // description: {
+    //     type: String,
+    //     required: true
+    // }
 }, {
     timestamps: true  //creates a timestamp for created at and updtaed at timestamps for each vote
 })

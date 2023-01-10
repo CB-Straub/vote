@@ -13,6 +13,7 @@ import Header from './components/Header';
 function App() {
   return (
     <>
+  
     <Router>
        <div className='container'>
          <Header />
@@ -20,10 +21,14 @@ function App() {
           <Route path='/' element={<Dashboard/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element={<Register/>} />
-        </Routes>
-      </div>
-   </Router>
-   <ToastContainer />
+        </Routes> 
+       
+    </div>  
+    </Router>
+    <ToastContainer /> 
+   
+   
+  
    </>
    
   );

@@ -26,13 +26,13 @@ const onSubmit =(e) => {
                     type='text' 
                     name='text' 
                     id='text' 
-                    placeholder='Type a vote here'
+                    placeholder='Add new blog post here'
                     value={ text }
                     onChange={ (e) => setText(e.target.value)}
                 />
             </div>
             <div className="form-group">
-                <button className='btn btn-block' type='submit'>Place your vote</button>
+                <button className='btn btn-block' type='submit'>Tell us a story</button>
             </div>
         </form>
     </section>

@@ -24,7 +24,8 @@ const Header = () => {
 
     <header className='header'>
         <div className='logo'>
-            <Link className='main' to='/'>Rock the Vote</Link>
+            <Link className='main' to='/'>Ahimsattva</Link>
+            <h2 className='business'>Yoga & Meditation Blog</h2>
         </div>
         <ul>
         {user ? (

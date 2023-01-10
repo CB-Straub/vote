@@ -9,9 +9,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1501776553610-5b5c2107f93e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9saXRpY3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500);
+  background-image: url(https://images.unsplash.com/photo-1593810451137-5dc55105dace?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8eW9nYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.7;
 }
 
 a {
@@ -21,9 +22,10 @@ a {
   
 }
 
+
 p {
   line-height: 1.7;
-  color: white
+  
 }
 
 ul {
@@ -54,7 +56,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 4px solid #e6e6e6;
+  border-bottom: 4px solid black;
   margin-bottom: 60px;
   
 }
@@ -84,6 +86,9 @@ h3 {
 
 .header ul li a svg {
   margin-right: 5px;
+}
+.business{
+  color: rgb(221, 217, 194)
 }
 
 .heading {
@@ -210,14 +215,14 @@ h3 {
 .main {
   font-size: 50px;
   font-weight: bold;
-  color: red;
+  color: brown;
   padding-right: 3em;
   
   
 }
 
 .main:hover {
-  color: blue
+  color:rgba(245, 245, 245, 0.755)
 }
 
 @keyframes spin {

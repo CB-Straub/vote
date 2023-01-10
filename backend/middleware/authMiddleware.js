@@ -10,7 +10,7 @@ const protect = asyncHandler(async (req, res, next) => {
     req.headers.authorization.startsWith('Bearer')
   ) {
     try {
-      // Get token from header, bearer is the 0 index and the token is 1 
+      // Get token from header, bearer is the 0 index and the token is 1 .....using this insteadt of axios.interceptors syntax 
       token = req.headers.authorization.split(' ')[1]  
 
       // Verify token

@@ -15,16 +15,17 @@ const VoteItem = ({ vote }) => {
 
   return (
     <div className='goal' >
-        {/* <div>
-            {new Date(vote.createdAt).toLocaleString('en-us')}
-        </div> */}
+        
         <h4>{vote.text}</h4>
         <button 
             className='close' 
             title="Delete"  
             onClick={() => dispatch(deleteVote(vote._id))}>
-                <MdDelete/>
+             <MdDelete/>
         </button>
+        <div>
+            {new Date(vote.createdAt).toLocaleString('en-us')}
+        </div>
     </div>
         
   )
