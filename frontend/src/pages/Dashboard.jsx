@@ -9,8 +9,8 @@ import Spinner from '../components/Spinner'
 import VoteItem from '../components/VoteItem'
 
 //redux
-import { getVotes, } from '../features/votes/voteSlice'
-import { reset } from '../features/auth/authSlice'
+import { getVotes, reset } from '../features/votes/voteSlice'
+// import { reset } from '../features/auth/authSlice'
 
 
 const Dashboard = () => {
@@ -18,7 +18,23 @@ const Dashboard = () => {
 const dispatch = useDispatch()
 const navigate = useNavigate()
 const { user } = useSelector((state) => state.auth)
-const { votes, isLoading, isError, message} =useSelector((state) => state.votes)
+const { votes, isLoading, isError, message} = useSelector((state) => state.votes)
+
+// useEffect(() => {
+//   if (isError) {
+//     console.log(message)
+//   }
+
+//   if (!user) {
+//     navigate('/login')
+//   }
+
+//   dispatch(getVotes())
+
+//   return () => {
+//     dispatch(reset())
+//   }
+// }, [user, navigate, isError, message, dispatch])
 
 useEffect(() => {
 

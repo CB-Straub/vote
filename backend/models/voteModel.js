@@ -13,7 +13,7 @@ const voteSchema = mongoose.Schema({
     }, 
     createdAt:{
         type: Date,
-        required: true,
+        required: false,
     },
     // imageUrl: {
     //     type: String,
@@ -24,7 +24,7 @@ const voteSchema = mongoose.Schema({
     //     required: true
     // }
 }, {
-    timestamps: true  //creates a timestamp for created at and updtaed at timestamps for each vote
+    // timestamps: true  //creates a timestamp for created at and updtaed at timestamps for each vote
 })
 
 module.exports = mongoose.model('Vote', voteSchema )

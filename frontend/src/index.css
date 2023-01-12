@@ -42,6 +42,9 @@ h3 {
   font-weight: 600;
   margin-bottom: 10px;
 }
+h4 {
+  padding-bottom: 15px;
+}
 
 .container {
   width: 100%;
@@ -107,13 +110,27 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+ 
+  
 }
 
 .goal {
-  background-color: #f4f4f4;
-  margin: 10px 0;
-  padding: 20px 0 10px;
+  /* background-color: #f4f4f4; */
+  /* margin: 10px 0;
+  padding: 20px 0 10px; */
   position: relative;
+  width: 300px;
+  height:300px;
+  padding: 1rem;
+  /* moves card off the left edge of screen */
+  cursor:pointer;
+  margin: 8px auto;
+  background: whitesmoke;
+  box-shadow: 2px 4px 5px rgba(0 , 0 , 0, 0.4);
+  border-radius: 13px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .goal .close {
@@ -245,5 +262,8 @@ h3 {
 
   .heading p {
     font-size: 1.5rem;
+  }
+  .goals {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

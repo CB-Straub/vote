@@ -19,12 +19,12 @@ const VoteItem = ({ vote }) => {
         <h4>{vote.text}</h4>
         <button 
             className='close' 
-            title="Delete"  
+            title="Trash Me"  
             onClick={() => dispatch(deleteVote(vote._id))}>
              <MdDelete/>
         </button>
-        <div>
-            {new Date(vote.createdAt).toLocaleString('en-us')}
+        <div className='date' key="date">
+            { Date(vote.createdAt).toLocaleString('en-us')}
         </div>
     </div>
         

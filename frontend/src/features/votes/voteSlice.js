@@ -16,7 +16,7 @@ export const createVote = createAsyncThunk('votes/create', async (voteData, thun
             return await voteService.createVote(voteData, token)
 
         }catch(error){
-            const message = (error.response && error.response.data && error.message) 
+            const message = (error.response && error.response.data && error.response.data.message) 
             || error.message 
             || error.toString()
             return thunkAPI.rejectWithValue(message)
