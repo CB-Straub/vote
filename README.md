@@ -4,3 +4,4 @@ Frontend Dependencies: React, Redux-Toolkit, React-Icons, React-Toastify(for not
 Backend Dependencies: mongoose, jsonwebtoken, express, dotenv, bcrypt.js
 
 ![Screenshot 2023-01-12 at 11-34-25 React Redux App](https://user-images.githubusercontent.com/72115377/212150462-eefabde9-8d96-444f-9357-de371d061908.png)
+![Screenshot 2023-01-12 at 11-45-48 React Redux App](https://user-images.githubusercontent.com/72115377/212152761-221371f3-9a95-4a37-8302-dbc39aaf1a2d.png)
