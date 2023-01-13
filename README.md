@@ -1,4 +1,4 @@
-User Authtnetication with MERN Stack.  Learned it at a Boot Camp coding school and then on You Tube. Its now part of my portfolio to entice someone to give me a job because I can follow directions on how to implement code someone else wrote.   I designed the layout though....so theres that.  
+User Authentication with MERN Stack.  Learned it basically and briefly at a Boot Camp coding school and then on You Tube. Its now part of my portfolio to entice someone to give me a job because I can follow directions on how to implement code someone else wrote.   I designed the layout though....so theres that. This isnt imposter syndrome...its called honesty.  But yes....I can build this. 
 
 Frontend Dependencies: React, Redux-Toolkit, React-Icons, React-Toastify(for notifications), React-Router-Dom, Axios
 
