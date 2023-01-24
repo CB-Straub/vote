@@ -9,7 +9,6 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd frontend && npm install && npm run build"
-   
   },
   "keywords": [],
   "author": "",
@@ -22,7 +21,6 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.3"
-
   },
   "devDependencies": {
     "concurrently": "^7.2.0",
