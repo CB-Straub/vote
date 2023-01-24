@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  height: 100%;
   background-image: url(https://images.unsplash.com/photo-1593810451137-5dc55105dace?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8eW9nYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500);
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,7 +140,7 @@ h4 {
   cursor: pointer;
   border: none;
   background:none;
-  color: red;
+  color: rgb(201, 10, 10);
   font-size: x-large;
   
 }
@@ -241,6 +241,13 @@ h4 {
 .main:hover {
   color:rgba(245, 245, 245, 0.755)
 }
+.footer-container p {
+  display: flex;
+  color: whitesmoke;
+  font-style: italic;
+  justify-content: center
+}
+
 
 @keyframes spin {
   0% {
