@@ -1,4 +1,4 @@
-User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Live version coming soon.  
+User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Static Version deployed on Render https://ahimsattva-blog.onrender.com.  Static site is not connected to the MongoDb database and Toastify notifications will always state successful because of that. Full deployment of site coming soon.  
 
 
 Frontend Dependencies: React, Redux-Toolkit, React-Icons, React-Toastify(for notifications), React-Router-Dom, Axios
