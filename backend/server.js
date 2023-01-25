@@ -22,11 +22,14 @@ app.use(express.urlencoded({ extended: false }))
 app.use('/api/votes', require('./routes/voteRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
-app.use(express.static(path.resolve(__dirname, '../frontend/build')));
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
-  });
-
 app.use(errorHandler)
+
+app.use(express.static(path.resolve(__dirname, '../frontend/build')));
+
+
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
+});
 
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`))
