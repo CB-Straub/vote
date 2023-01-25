@@ -25,9 +25,6 @@ app.use('/api/users', require('./routes/userRoutes'))
 app.use(errorHandler)
 
 app.use(express.static(path.resolve(__dirname, '../frontend/build')));
-
-
-
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
 });
