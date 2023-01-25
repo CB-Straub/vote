@@ -1,5 +1,4 @@
-User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Live version coming soon.  
-
+User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Static Version deployed on Render https://ahimsattva-blog.onrender.com,  and on Netlfiy https://netlify-ahimsattva-blog.netlify.app/, for testing purposes.   On Render the react-toastify renders successful always while on Netlify the notifications result in a 404 server error. Different static deployments produce a separate result which will be debugged.  
 
 Frontend Dependencies: React, Redux-Toolkit, React-Icons, React-Toastify(for notifications), React-Router-Dom, Axios
 
