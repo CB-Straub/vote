@@ -1,4 +1,4 @@
-User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Static Version deployed on Render https://ahimsattva-blog.onrender.com,  and on Netlfiy https://netlify-ahimsattva-blog.netlify.app/, for testing purposes.  Full site deployed using Render : https://ahimsattva.onrender.com
+User Authentication with MERN Stack.  Full CRUD operations will be implemented once client decides on functionality and layout.  Static Version deployed on Render https://ahimsattva-blog.onrender.com,  and on Netlfiy https://netlify-ahimsattva-blog.netlify.app/, for testing purposes.  Full site deployed using Render : https://ahimsattva.onrender.com  (load time is very slow due to free tier on Render) 
 
 Frontend Dependencies: React, Redux-Toolkit, React-Icons, React-Toastify(for notifications), React-Router-Dom, Axios
 
