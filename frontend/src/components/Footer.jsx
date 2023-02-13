@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='footer-container'>
-        <p>@2022 Vanomoose SSP, LLC</p>
+        <p>© Deadwax, Inc  dw-B1-0023 ß</p>
     </div>
   )
 }

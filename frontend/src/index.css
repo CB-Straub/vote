@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100%;
+  height: 100vh;
   background-image: url(https://images.unsplash.com/photo-1593810451137-5dc55105dace?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8eW9nYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500);
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,7 +245,10 @@ h4 {
   display: flex;
   color: whitesmoke;
   font-style: italic;
-  justify-content: center
+  justify-content: center;
+  position: fixed;
+  padding-top: 550px;
+  align-items: center;
 }
 
 
@@ -258,13 +261,17 @@ h4 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
   .form {
-    width: 90%;
+    width: 90%;  
+    
   }
-
+  .header ul li a{
+    font-size: 1.13rem;
+  }
+  
   .heading h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .heading p {
@@ -273,4 +280,11 @@ h4 {
   .goals {
     grid-template-columns: repeat(1, 1fr);
   }
+  .main{
+    font-size: 1.5rem;
+  }
+  .business {
+    font-size: small;
+  }
+  
 }
